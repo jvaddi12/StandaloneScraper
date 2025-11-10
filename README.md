@@ -1,7 +1,16 @@
 # StandaloneScraper
 
-The levi review scraper multi page file is to be use in the run multi page scraper for the multi page pagination of the reviews. 
+## Description
+A multi-page web scraper designed to extract product reviews automatically. Utilizes Selenium (headless Chrome) to navigate pagination and stores each review in a Postgres database. Reviews are then embedded into a Pinecone vector database for similarity analysis and categorization, enabling companies to analyze customer feedback efficiently.
 
-You must export the brightdata API key. 
+## Skills / Technologies
+Python, Selenium, Postgres, Pinecone, API integration, Web Scraping, LLM Sandbox
 
-The run_scrpaer.py file only scrapes the first page of reviews, so if you need multiple pages go to run multi page scraper instead. 
+## Features / Highlights
+- Automatically paginates through multiple pages of reviews
+- Stores scraped reviews as JSON in Postgres
+- Embeds reviews in Pinecone for similarity search and categorization
+- Integrates with a dynamic LLM-powered scraping sandbox for flexible website scraping
+
+## Notes
+This scraper was integrated into a larger system capable of dynamically generating scraping scripts for any website using LLM sandbox generation.
